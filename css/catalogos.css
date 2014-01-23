@@ -1,0 +1,56 @@
+.ui-dialog { 
+    z-index: 1000 !important ;
+}
+.ui-widget-overlay{
+    z-index: 1000 !important ;
+}
+.tblReporte tr td{
+    width: 260px;
+    height: 30px;
+}
+
+.tdHeader{
+    text-align: center;
+    font-weight: bolder;
+    color: #004f7c;
+    height: 35px;
+}
+
+.lblLink{
+    color: #004f7c;
+    cursor: pointer;
+}
+
+.imgAdd{
+    height: 32px;
+    width: 32px; 
+    float: left;
+    cursor:pointer;
+}
+
+.tblFormulario{
+    font-size: 12px;
+}
+
+.tblFormulario tr td{
+    text-align: center !important;
+    width: 260px;
+    height: 30px;
+}
+.txtFormulario{
+    width: 200px;
+}
+
+.sltFormulario{
+    width: 200px;
+}
+
+#divModalAltaUsuario{
+    height: 300px;
+}
+
+.divControles{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+}
