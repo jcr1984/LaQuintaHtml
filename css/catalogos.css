@@ -4,17 +4,6 @@
 .ui-widget-overlay{
     z-index: 1000 !important ;
 }
-.tblReporte tr td{
-    width: 260px;
-    height: 30px;
-}
-
-.tdHeader{
-    text-align: center;
-    font-weight: bolder;
-    color: #004f7c;
-    height: 35px;
-}
 
 .lblLink{
     color: #004f7c;

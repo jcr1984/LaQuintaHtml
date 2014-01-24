@@ -1,14 +1,20 @@
 <form>
     
 <div id="divModalAltaUsuario">
-    <table border="1" class="tblFormulario">
+    <div class="marcoTabla">
+    <table class="tblFormulario">
         <tr>
             <td class="tdHeader">Usuario:</td>
+            <!--<td></td>-->
+        </tr>
+        <tr>
+            <td><input id="txtModUsuario"  class="txtFormulario" type="text" /></td>
+        </tr>
+        <tr>
             <td class="tdHeader">Contrase&ntilde;a:</td>
             <td class="tdHeader">Confirmar Contrase&ntilde;a:</td>
         </tr>
         <tr>
-            <td><input id="txtModUsuario"  class="txtFormulario" type="text" /></td>
             <td><input id="txtModPassword" class="txtFormulario" type="password" value="password"/></td>
             <td><input id="txtModPasswordConf" class="txtFormulario" type="password" value="password"/></td>
         </tr>
@@ -37,6 +43,7 @@
             </td>
         </tr>
     </table>
+    </div>
     <div class="divControles">
         <input type="button" value="Guardar" />
     </div>
