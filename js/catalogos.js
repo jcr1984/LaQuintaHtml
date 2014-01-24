@@ -70,6 +70,15 @@ function openDetalle(id){
         }
     });
 }
+//////////////PERFILES
+function catPerfiles(){
+    
+}
+
+function loadAgregarPerfil(){
+    
+}
+
 ///////////CLIENTES
 function catClientes(){
     $.ajax({
