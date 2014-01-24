@@ -34,8 +34,7 @@ function loadAgregarUsuario(){
     });
 }
 
-function SelectElement(element,valueToSelect)
-{    
+function SelectElement(element,valueToSelect){    
     var element = document.getElementById(element);
     element.value = valueToSelect;
 }
@@ -72,7 +71,14 @@ function openDetalle(id){
 }
 //////////////PERFILES
 function catPerfiles(){
-    
+    $.ajax({
+        data:  '',
+        url:   'catalogos/perfiles/perfiles.html',
+        type:  'post',
+        success:  function (response) {
+            $("#workArea").html(response);
+        }
+    });
 }
 
 function loadAgregarPerfil(){
