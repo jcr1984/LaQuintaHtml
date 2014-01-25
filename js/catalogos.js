@@ -260,7 +260,73 @@ function openDetalleEmpleado(){
     });
 }
 
-//////////PRODUCTOS
+///////////PRODUCTOS
 function catProductos(){
-    //TODO
+    $.ajax({
+        data:  '',
+        url:   'catalogos/productos/productos.html',
+        type:  'post',
+        success:  function (response) {
+            $("#workArea").html(response);
+        }
+    });
+}
+
+function loadAgregarProducto(){
+    $.ajax({
+        data:  '',
+        url:   'catalogos/productos/modalAltaProducto.html',
+        type:  'post',
+        success:  function (response) {
+            $("#dialogModal").html(response);
+            
+            $("#dialogModal").dialog({
+                autoOpen:false,
+                modal:true,
+                hide:'drop',
+                show:'fold',
+                width: "40%",
+                height: 'auto',
+                position: [50,50],
+                draggable: true,
+                title:'Agregar Producto',
+                resizable: false
+            });
+            $('#dialogModal').dialog('open');
+        }
+    });
+}
+
+function openDetalleProducto(id){
+    var clave=$("#lblClave"+id).html();
+    var producto=$("#lblProducto"+id).html();
+    var presentacion=$("#lblPresentacion"+id).html();
+    var marca=$("#lblMarca"+id).html();
+    $.ajax({
+        data:  '',
+        url:   'catalogos/productos/modalUpdProducto.html',
+        type:  'post',
+        success:  function (response) {
+            $("#dialogModal").html(response);
+            $("#txtModClave").val(clave);
+            $("#txtModProducto").val(producto);
+            $("#txtModPresentacion").val(presentacion);
+            $("#txtModMarca").val(marca);
+            
+            $("#dialogModal").dialog({
+                autoOpen:false,
+                modal:true,
+                hide:'drop',
+                show:'fold',
+                width: "40%",
+                height: 'auto',
+                position: [50,50],
+                draggable: true,
+                title:'Modificar Producto',
+                resizable: false
+            });
+            $('#dialogModal').dialog('open');
+        }
+    });
+    
 }
