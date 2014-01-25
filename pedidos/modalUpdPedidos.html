@@ -1,0 +1,95 @@
+<form>
+    <table>
+    <!---------------------------- Primera Fila------------------------->
+    
+    <tr>
+        <!------------- Primer Columna---------------->
+        <td>
+            <fieldset>
+                <legend>Seleccion de cliente</legend>
+                <div id="listaClientes">
+                    <select id="sltModNombre" class="sltFormulario">
+                        <option value="-1">Seleccione...</option>
+                        <option value="1">Juan Lopez</option>
+                        <option value="2">Tulio Silao</option>
+                        <option value="3">Alan Sanchez</option>
+                        <option value="3">Francisco Pelaez</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Domicilio entrega</legend>
+                <div id="contDomEntrega">
+                    <select id="sltModPerfil" class="sltFormulario">
+                    <option value="-1">Seleccione...</option>
+                    <option value="1">Abastos</option>
+                    <option value="2">Pe–uelas</option>
+                    <option value="2">Cerrito Colorado</option>
+                    <option value="3">La Cruz</option>
+                </select>
+            
+                </div>
+            </fieldset>    
+        </td>
+        <!------------- Segunda Columna------------->
+        <td>
+            <fieldset>
+                <legend>Productos Autorizados</legend>
+                <div id="contProductoAutorizado">
+                    <table border="1px">
+                        <tr>
+                            <td>Producto</td>
+                            <td>Presentacion</td>
+                            <td>Marca</td>
+                            <td>Pzas</td>
+                        </tr>
+                        <tr>
+                            <td>Oaxaca</td>
+                            <td>1 Kg</td>
+                            <td>La Quinta</td>
+                            <td><input id=""  value="130"name="" style="width: 50px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Panela</td>
+                            <td>3 Kg</td>
+                            <td>Guenesito</td>
+                            <td><input id=""  name="" style="width: 50px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ranchero</td>
+                            <td>1/4 Kg</td>
+                            <td>La Quinta</td>
+                            <td><input id="" value="90" name="" style="width: 50px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Panela Condimentadp</td>
+                            <td>2 Kg</td>
+                            <td>La Quinta</td>
+                            <td><input id="" name="" style="width: 50px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Ranchero</td>
+                            <td>1/2 Kg</td>
+                            <td>La Quinta</td>
+                            <td><input id="" name=""  value="60"style="width: 50px;"></td>
+                        </tr>
+                        
+                    
+                    </table>
+            
+                </div>
+            </fieldset>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Actualizar" />
+        </td>
+        <td>
+            <input type="button" value="Eliminar" />
+        </td>
+    </tr>
+</table>
+
+</form>
