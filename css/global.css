@@ -86,3 +86,15 @@ table, table *{
 .ui-widget{
     font-family: serif !important;
 }
+fieldset legend{
+    color:#01549F;
+}
+
+h3{
+    font-size: 1.3em !important;
+    color:#003767;
+}
+
+.tdMedia{
+    width: 150px !important;
+}
