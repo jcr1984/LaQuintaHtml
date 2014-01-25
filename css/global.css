@@ -21,7 +21,7 @@
 .tblReporte tr td{
 /*    border-bottom: 1px solid #004f7c;
     padding: 5px;*/
-    width: 260px;
+    width: 200px;
 /*    border-right: 1px solid #004f7c;
     border-left: 1px solid #004f7c;
     border-radius: 0;
@@ -76,4 +76,13 @@ fieldset{
 
 fieldset legend{
     color:#01549F;
+}
+
+table, table *{
+    font-size: 11pt !important;
+    font-family: serif !important;
+}
+
+.ui-widget{
+    font-family: serif !important;
 }

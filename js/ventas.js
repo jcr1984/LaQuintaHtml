@@ -65,7 +65,7 @@ function loadAprobarRemision(idRemision,total){
             modal:true,
             hide:'drop',
             show:'fold',
-            width: "70%",
+            width: 1000,
             height: 'auto',
             position: [50,50],
             draggable: true,
