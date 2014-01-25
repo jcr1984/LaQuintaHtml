@@ -121,7 +121,7 @@ function loadAgregarPerfil(){
                 height: 500,
                 position: [50,50],
                 draggable: true,
-                title:'Modificar Perfil',
+                title:'Agregar Perfil',
                 resizable: false
             });
             $('#dialogModal').dialog('open');
@@ -142,6 +142,28 @@ function catClientes(){
 }
 
 function loadAgregarCliente(){
+    $.ajax({
+        data:  '',
+        url:   'catalogos/clientes/modalAltaCliente.html',
+        type:  'post',
+        success:  function (response) {
+            $("#dialogModal").html(response);
+            
+            $("#dialogModal").dialog({
+                autoOpen:false,
+                modal:true,
+                hide:'drop',
+                show:'fold',
+                width: "40%",
+                height: 'auto',
+                position: [50,50],
+                draggable: true,
+                title:'Agregar Cliente',
+                resizable: false
+            });
+            $('#dialogModal').dialog('open');
+        }
+    });
 }
 
 function openDetalleCliente(id){
@@ -202,7 +224,7 @@ function loadAgregarEmpleado(){
                 modal:true,
                 hide:'drop',
                 show:'fold',
-                width: "40%",
+                width: 600,
                 height: 'auto',
                 position: [50,50],
                 draggable: true,
@@ -226,11 +248,11 @@ function openDetalleEmpleado(){
                 modal:true,
                 hide:'drop',
                 show:'fold',
-                width: "40%",
+                width: 600,
                 height: 'auto',
                 position: [50,50],
                 draggable: true,
-                title:'Modificar Cliente',
+                title:'Modificar Empleado',
                 resizable: false
             });
             $('#dialogModal').dialog('open');
