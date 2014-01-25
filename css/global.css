@@ -86,3 +86,6 @@ table, table *{
 .ui-widget{
     font-family: serif !important;
 }
+fieldset legend{
+    color:#01549F;
+}

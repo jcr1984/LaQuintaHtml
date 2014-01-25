@@ -147,8 +147,7 @@ function loadAgregarCliente(){
         url:   'catalogos/clientes/modalAltaCliente.html',
         type:  'post',
         success:  function (response) {
-            $("#dialogModal").html(response);
-            
+            $("#dialogModal").html(response);            
             $("#dialogModal").dialog({
                 autoOpen:false,
                 modal:true,
