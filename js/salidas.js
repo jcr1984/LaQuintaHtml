@@ -63,8 +63,7 @@ function salidaAsignacion (){
                         contar=contar+1;
                         $(ui.draggable).css({color: "#0F00FF"});
                         agregar = $(ui.draggable).text();
-                        $("#aviso").html("Se han agregado clientes al distribuidor");
-                        $("#nombre_elemento").html("Último cliente agregado ... " + agregar);
+                        $("#nombre_elemento").html("Cliente agregado: " + agregar);
                     },
                     out: function( event, ui ) {
                         $(ui.draggable).css({color: "#000000"});

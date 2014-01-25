@@ -5,7 +5,7 @@
         <input class="inputClienteBusqueda" />
         <br>
         <select name="sltDistribuidor" class="sltDistribuidor">
-            <option value="" selected>Seleccione un cliente...</option>
+            <option value="" selected>Seleccione un distribuidor...</option>
             <option value="Manuel Antonio Fernández Ortubey" >Manuel Antonio Fernández Ortubey  </option>
             <option value="Juan María Estévez Raimúndez" >Juan María Estévez Raimúndez</option>
             <option value="Daniel José Narancio Araújo" >Daniel José Narancio Araújo</option>
@@ -13,21 +13,20 @@
         </select>
     </div>
 </center>
-<br><br>
+
 <div class="contenedorFiltros">
     <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
 </div>
-<table width="100%" border="1">
+<div id="nombre_elemento" class="tdHeader" style="font: bold; width: 100%"></div>
+<table width="100%">
     <tr>
         <td colspan="2">
-            <div id="aviso"></div>
-            <div id="nombre_elemento"></div>
         </td>
     </tr>
     <tr>
         <td>
-            <div id="draggable" class="ui-widget-content" style="margin-left: 30%">
-                <ul style="padding-top: 50px">
+            <div id="draggable" class="ui-widget-content" style="margin-left: 40%">
+                <ul>
                     <li ondblclick="detalleClientesSal();">Hermanos Coronel</li>
                     <li ondblclick="detalleClientesSal();">Victor Fernando de Leon</li>
                     <li ondblclick="detalleClientesSal();">Oscar Salas Figueroa</li>
@@ -45,9 +44,9 @@
             </div>
         </td>
         <td>
-            <div class="ui-widget-content"  id="droppable" style="margin-right: 30%">
+            <div class="ui-widget-content" id="droppable" style="margin-right: 30%">
                 <h2>Distribuidor:</h2>
-                <h3 id="titleDistribuidor"></h3>
+                <h2 id="titleDistribuidor"></h2>
             </div>
         </td>
     </tr>
