@@ -1,90 +1,96 @@
+<img id="imgAdd" alt="agregar" class="imgAdd" src="img/produccion/Excel.png" onclick=""/>
 
-<link rel="stylesheet" href="css/salidas/salidas.css" />
-
-<div class="contenedorFiltros">
-            <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
+<h1>Hermanos Coronel</h1>
+<div class="marcoTabla" style="float: left;">
+    <table class="tblReporte">
+        <tr>
+            <td class="tdHeader" onclick="loadModalDetalleProd();">PRODUCTOS</td>
+            <td class="tdHeader">CANTIDAD</td>
+            <td class="tdHeader">PESO</td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PANELA</label></td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PANELA KG</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PANELITA</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PANELA ECO3</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PAN CHIP</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PAN JAL</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PAN G</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PAN KG G</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">PANELITA G</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">OAXACA 3</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="odd">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">OAXACA</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+        <tr class="even">
+            <td><label class="lblLink" onclick="loadModalDetalleProd();">OAX 1/2</td>
+            <td><input class="inputCantidad" /></td>
+            <td><input class="inputCantidad" /></td>
+        </tr>
+    </table>
 </div>
-<div class="fondoComun">
-    <div>Hermanos Coronel</div>
-    <div style="display: inline-block" >
-        <table id="tablaDatos" border="1" width="100%">
+<div style="float: right;">
+    <div class="marcoDiv">
+        <table class="tblReporte" style="height: 200px;">            
             <tr>
-                <th onclick="loadAgregarUsuario();">PRODUCTOS</th>
-                <th>CANTIDAD</th>
+                <td class="tdHeader"><h4>Validaci&oacute;n Vigilancia</h4></td>
             </tr>
             <tr>
-                <td><input class="inputFiltro" /></td>
-                <td><input class="inputFiltro" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">PANELA</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">PANELA KG</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">PANELITA</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">PANELA ECO3</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">PAN CHIP</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">PAN JAL</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">PAN G</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">PAN KG G</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">PANELITA G</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">OAXACA 3</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="odd">
-                <td onclick="loadModalDetalleProd();">OAXACA</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-            <tr class="even">
-                <td onclick="loadModalDetalleProd();">OAX 1/2</td>
-                <td><input class="inputCantidad" /></td>
-            </tr>
-        </table>
-    </div>
-    <div style="display: inline-block">
-        <table border="1" width="100%" style="height: 100%">
-            <tr>
-                <td>Validaci&oacute;n Vigilancia</td>
-            </tr>
-            <tr>
-                <td>Jorge Martinez Rivera</td>
+                <td><h4>Jorge Martinez Rivera</h4></td>
             </tr>
             <tr>
                 <td><input type="text" /></td>
             </tr>
+        </table>
+    </div><br><br>
+    <div class="marcoDiv">
+        <table class="tblReporte" style="height: 200px;">
             <tr>
-                <td></td>
+                <td class="tdHeader"><h4>Validaci&oacute;n Pedidos</h4></td>
             </tr>
             <tr>
-                <td>Validaci&oacute;n Pedidos</td>
-            </tr>
-            <tr>
-                <td>Aldo Perez Montes</td>
+                <td><h4>Aldo Perez Montes</h4></td>
             </tr>
             <tr>
                 <td><input type="text" /></td>

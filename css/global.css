@@ -25,13 +25,14 @@
     border-right: 1px solid #004f7c;
     border-left: 1px solid #004f7c;
     border-radius: 0;
+    text-align: center;
 }
 
 td.impar{
     background-color: #C8DCFF;  
 }
 
-.tdHeader{;
+.tdHeader{
     /* text-align: center; */
     /* font-weight: bolder; */
     color: #004f7c;
@@ -62,4 +63,28 @@ background-image: -webkit-linear-gradient(bottom, #004F7C 0%, #000000 800%);
 /* W3C Markup, IE10 Release Preview */ 
 background-image: linear-gradient(to top, #004F7C -150%, #ffffff 85%);
     
+}
+.imgAdd{
+    height: 32px;
+    width: 32px; 
+    float: right;
+    cursor: pointer;
+}
+.sltCliente{
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+.inputClienteBusqueda{
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+
+.marcoDiv{
+    border-radius: 8px;
+    border: 2px solid #004f7c;
+    display: inline-block;
 }

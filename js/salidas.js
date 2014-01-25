@@ -5,10 +5,10 @@
 //    });
 //    
 //});
-$(document).ready(function(){
+//$(document).ready(function(){
     
     
-});
+//});
 
 function salidaProducto(){
     $.ajax({
@@ -91,6 +91,29 @@ function salidaAsignacion (){
                        });
 
                      });
+        }
+    });
+}
+function detalleClientesSal(){
+    $.ajax({
+        data:  '',
+        url:   'catalogos/clientes/modalUpdCliente.html',
+        type:  'post',
+        success:  function (response) {
+            $("#dialogModal").html(response);
+            $("#dialogModal").dialog({
+                autoOpen:false,
+                modal:true,
+                hide:'drop',
+                show:'fold',
+                width: "70%",
+                height: 'auto',
+                position: [50,50],
+                draggable: true,
+                title:'Agregar Usuario',
+                resizable: false
+            });
+            $('#dialogModal').dialog('open');
         }
     });
 }
