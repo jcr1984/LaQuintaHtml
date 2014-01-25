@@ -202,7 +202,7 @@ function loadAgregarEmpleado(){
                 modal:true,
                 hide:'drop',
                 show:'fold',
-                width: "40%",
+                width: 600,
                 height: 'auto',
                 position: [50,50],
                 draggable: true,
@@ -226,11 +226,11 @@ function openDetalleEmpleado(){
                 modal:true,
                 hide:'drop',
                 show:'fold',
-                width: "40%",
+                width: 600,
                 height: 'auto',
                 position: [50,50],
                 draggable: true,
-                title:'Modificar Cliente',
+                title:'Modificar Empleado',
                 resizable: false
             });
             $('#dialogModal').dialog('open');
