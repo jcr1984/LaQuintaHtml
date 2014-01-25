@@ -142,6 +142,27 @@ function catClientes(){
 }
 
 function loadAgregarCliente(){
+    $.ajax({
+        data:  '',
+        url:   'catalogos/clientes/modaAltadCliente.html',
+        type:  'post',
+        success:  function (response) {
+            $("#dialogModal").html(response);
+            $("#dialogModal").dialog({
+                autoOpen:false,
+                modal:true,
+                hide:'drop',
+                show:'fold',
+                width: 570,
+                height: 'auto',
+                position: [50,50],
+                draggable: true,
+                title:'Agregar Cliente',
+                resizable: false
+            });
+            $('#dialogModal').dialog('open');
+        }
+    });
 }
 
 function openDetalleCliente(id){
