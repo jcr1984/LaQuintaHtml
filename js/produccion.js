@@ -52,6 +52,31 @@ function pantProduccionGeneral(){
       },
       success: function(respuesta) {
          $("#workArea").html(respuesta);
+         for(var i=0;i<3;i++) {
+             restarAutorizadas_EnBodega("contAutorizadas"+i,"contProducidas"+i,"txtEnBodega"+i);
+         }
+      }
+   });
+}
+
+function restarAutorizadas_EnBodega(autorizadas,producidas,enBodega) {
+    autorizadas = $("#"+autorizadas).html();
+    producidas = $("#"+producidas).html();
+    var total = parseFloat(autorizadas) - parseFloat(producidas);
+    $("#"+enBodega).val(total);
+}
+
+function pantProduccionStockDia(){
+    $.ajax({
+      url: './produccion/pantProduccionStockDia.html',
+      type:'POST',
+      async: true,
+      data: null,
+      beforeSend: function(xhr) {
+             //document.getElementById('workArea').innerHTML = 'Espere un momento.';
+      },
+      success: function(respuesta) {
+         $("#workArea").html(respuesta);
       }
    });
 }
