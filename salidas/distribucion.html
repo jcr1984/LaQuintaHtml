@@ -1,6 +1,21 @@
 <div class="contenedorFiltros">
     <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
 </div>
+<center>
+    <div class="marcoTabla">
+        <h3>Selecci&oacute;n de rutas</h3>
+        <input class="inputClienteBusqueda" />
+        <br>
+        <select name="sltDistribuidor" class="sltDistribuidor">
+            <option value="" selected>Seleccione un cliente...</option>
+            <option value="Manuel Antonio Fernández Ortubey" >Manuel Antonio Fernández Ortubey  </option>
+            <option value="Juan María Estévez Raimúndez" >Juan María Estévez Raimúndez</option>
+            <option value="Daniel José Narancio Araújo" >Daniel José Narancio Araújo</option>
+            <option value="Esteban Martinez" >Esteban Martinez</option>
+        </select>
+    </div>
+</center>
+<br><br>
 <div id="draggable" class="ui-widget-content">
     <ul style="padding-top: 50px">
         <li ondblclick="detalleClientesSal();">Hermanos Coronel</li>
@@ -15,12 +30,12 @@
         <li ondblclick="detalleClientesSal();">Cremeria Abastos</li>
         <li ondblclick="detalleClientesSal();">Leopoldo Chavalines</li>
         <li ondblclick="detalleClientesSal();">Derivados de Lacteos Y Mas</li>
-        <li ondblclick="detalleClientesSal();h">El Buen Queso</li>
+        <li ondblclick="detalleClientesSal();">El Buen Queso</li>
     </ul>
 </div>
 <div class="ui-widget-content"  id="droppable">
     <h2>Distribuidor:</h2>
-    <h3>Juan Hector Aguilar:</h3>
+    <h3 id="titleDistribuidor"></h3>
 </div>
 <div id="aviso" class="divModalAltaUsuario tdHeader"></div>
 <div id="nombre_elemento"></div>
