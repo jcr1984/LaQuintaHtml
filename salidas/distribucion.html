@@ -1,7 +1,7 @@
 <center><h3>Distribuci&oacute;n</h3></center>
 <center>
     <div class="marcoTabla">
-        <h3>Selecci&oacute;n de rutas</h3>
+        <h4>Selecci&oacute;n de rutas</h4>
         <input class="inputClienteBusqueda" />
         <br>
         <select name="sltDistribuidor" class="sltDistribuidor">
@@ -14,19 +14,29 @@
     </div>
 </center>
 <br><br>
-<div class="contenedorFiltros">
-    <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
-</div>
-<table width="100%">
+<center>
+    
+<table width="60%">
     <tr>
         <td colspan="2">
-            <div id="aviso"></div>
-            <div id="nombre_elemento"></div>
+            <div class="contenedorFiltros">
+                <div align="right" style="margin-right: 100px;">
+                    <img src="img/produccion/Excel.png" height="32" width="32">
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <center>
+                <div id="aviso" style="width: 100%;"></div><br/>
+                <div id="nombre_elemento" style="width: 100%;"></div>
+            </center>
         </td>
     </tr>
     <tr>
         <td>
-            <div id="draggable" class="ui-widget-content" style="margin-left: 30%">
+            <div id="draggable" class="ui-widget-content" style="">
                 <ul style="padding-top: 50px">
                     <li ondblclick="detalleClientesSal();">Hermanos Coronel</li>
                     <li ondblclick="detalleClientesSal();">Victor Fernando de Leon</li>
@@ -52,3 +62,4 @@
         </td>
     </tr>
 </table>
+</center>
