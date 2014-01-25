@@ -1,7 +1,4 @@
-<h3>Distribuci&oacute;n</h3>
-<div class="contenedorFiltros">
-    <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
-</div>
+<center><h3>Distribuci&oacute;n</h3></center>
 <center>
     <div class="marcoTabla">
         <h3>Selecci&oacute;n de rutas</h3>
@@ -17,26 +14,41 @@
     </div>
 </center>
 <br><br>
-<div id="draggable" class="ui-widget-content">
-    <ul style="padding-top: 50px">
-        <li ondblclick="detalleClientesSal();">Hermanos Coronel</li>
-        <li ondblclick="detalleClientesSal();">Victor Fernando de Leon</li>
-        <li ondblclick="detalleClientesSal();">Oscar Salas Figueroa</li>
-        <li ondblclick="detalleClientesSal();">Daniela Gonzales</li>
-        <li ondblclick="detalleClientesSal();">Mauricio Ponce</li>
-        <li ondblclick="detalleClientesSal();">Joaquin Cordoba</li>
-        <li ondblclick="detalleClientesSal();">Cremeria La Rosa</li>
-        <li ondblclick="detalleClientesSal();">Salchichoneria MX</li>
-        <li ondblclick="detalleClientesSal();">Soriana</li>
-        <li ondblclick="detalleClientesSal();">Cremeria Abastos</li>
-        <li ondblclick="detalleClientesSal();">Leopoldo Chavalines</li>
-        <li ondblclick="detalleClientesSal();">Derivados de Lacteos Y Mas</li>
-        <li ondblclick="detalleClientesSal();">El Buen Queso</li>
-    </ul>
+<div class="contenedorFiltros">
+    <div align="right"><img src="/quesosLaQuinta/img/produccion/Excel.png"></div>
 </div>
-<div class="ui-widget-content"  id="droppable">
-    <h2>Distribuidor:</h2>
-    <h3 id="titleDistribuidor"></h3>
-</div>
-<div id="aviso" class="divModalAltaUsuario tdHeader"></div>
-<div id="nombre_elemento"></div>
+<table width="100%" border="1">
+    <tr>
+        <td colspan="2">
+            <div id="aviso"></div>
+            <div id="nombre_elemento"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="draggable" class="ui-widget-content" style="margin-left: 30%">
+                <ul style="padding-top: 50px">
+                    <li ondblclick="detalleClientesSal();">Hermanos Coronel</li>
+                    <li ondblclick="detalleClientesSal();">Victor Fernando de Leon</li>
+                    <li ondblclick="detalleClientesSal();">Oscar Salas Figueroa</li>
+                    <li ondblclick="detalleClientesSal();">Daniela Gonzales</li>
+                    <li ondblclick="detalleClientesSal();">Mauricio Ponce</li>
+                    <li ondblclick="detalleClientesSal();">Joaquin Cordoba</li>
+                    <li ondblclick="detalleClientesSal();">Cremeria La Rosa</li>
+                    <li ondblclick="detalleClientesSal();">Salchichoneria MX</li>
+                    <li ondblclick="detalleClientesSal();">Soriana</li>
+                    <li ondblclick="detalleClientesSal();">Cremeria Abastos</li>
+                    <li ondblclick="detalleClientesSal();">Leopoldo Chavalines</li>
+                    <li ondblclick="detalleClientesSal();">Derivados de Lacteos Y Mas</li>
+                    <li ondblclick="detalleClientesSal();">El Buen Queso</li>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div class="ui-widget-content"  id="droppable" style="margin-right: 30%">
+                <h2>Distribuidor:</h2>
+                <h3 id="titleDistribuidor"></h3>
+            </div>
+        </td>
+    </tr>
+</table>
