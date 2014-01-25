@@ -9,23 +9,23 @@
 }
 
 .tblReporte{
-    border-spacing: 5px 0px;
+    /*border-spacing: 5px 0px;*/
     /* background-color: #ffffff; */
     border: 0;
-    margin-left: -6px;
-    margin-right: -6px;
+/*    margin-left: -6px;*/
+    /*margin-right: -6px;*/
 }
 .tblReporte tr{
 }
 
 .tblReporte tr td{
-    border-bottom: 1px solid #004f7c;
-    padding: 5px;
+/*    border-bottom: 1px solid #004f7c;
+    padding: 5px;*/
     width: 260px;
-    border-right: 1px solid #004f7c;
+/*    border-right: 1px solid #004f7c;
     border-left: 1px solid #004f7c;
     border-radius: 0;
-    text-align: center;
+    text-align: center;*/
 }
 
 td.impar{
@@ -33,36 +33,16 @@ td.impar{
 }
 
 .tdHeader{
-    /* text-align: center; */
-    /* font-weight: bolder; */
-    color: #004f7c;
+    color: #FFFFFF;
     height: 35px;
     border-bottom: 4px solid #004f7c !important;
     border-top: 0 !important;
     text-shadow: 0px 2px 3px #555;
-    /* font-size: 17pt !important; */
     text-transform: uppercase;
     letter-spacing: 0.3em;
     text-align: center;
     font-family: cursive;
-    /* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(bottom, #004F7C 0%, #000000 800%);
-
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(bottom, #004F7C 0%, #000000 800%);
-
-/* Opera */ 
-background-image: -o-linear-gradient(bottom, #004F7C 0%, #000000 800%);
-
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #004F7C), color-stop(8, #000000));
-
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(bottom, #004F7C 0%, #000000 800%);
-
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to top, #004F7C -150%, #ffffff 85%);
-    
+    background-color: #01549F;
 }
 .imgAdd{
     height: 32px;
@@ -87,4 +67,13 @@ background-image: linear-gradient(to top, #004F7C -150%, #ffffff 85%);
     border-radius: 8px;
     border: 2px solid #004f7c;
     display: inline-block;
+}
+
+fieldset{
+    border-color: #003767;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    color:#01549F;
 }
