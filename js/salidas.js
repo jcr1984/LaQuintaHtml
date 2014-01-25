@@ -7,8 +7,8 @@ function salidaProducto(){
             $("#workArea").html(response);
             detalleSalida();
             $(".sltCliente").change(function() {
-                var nombreDistribuidor =  $(".sltCliente").val();
-                $(".titleSalida").html(nombreDistribuidor);
+                var nombreCliente =  $(".sltCliente").val();
+                $(".titleSalida").html(nombreCliente);
             });
         }
     });
@@ -74,6 +74,10 @@ function salidaAsignacion (){
                         }
                     }
                 });
+            });
+            $(".sltDistribuidor").change(function() {
+                var nombreDistribuidor =  $(".sltDistribuidor").val();
+                $("#titleDistribuidor").html(nombreDistribuidor);
             });
         }
     });
